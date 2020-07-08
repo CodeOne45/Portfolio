@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+
+        <!--Importation fichiers style CSS-->
+
+        <!--Width max/min-->
+
+        <link rel="stylesheet" type="text/css" media="all and (min-width: 1415px)" href="styleCV.css">
+		<link rel="stylesheet" type="text/css" media="all and (max-width: 1415px)" href="style2CV Width max-min.css">
+        
+        <!--Titre de la page-->
+        <title>ePortfolio</title>
+
+        <!--Importation Bootstrap-->
+
+        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style type="text/css">
+            body { background-color: #0a254a !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+         </style>
+    </head>
+
+    <body>
+        <!--Definition  du la largeur de la page à l'aide du Bootstrap-->
+        <div id ="globale" class="mx-4 p-1 w-95">
+            
+            <!--En tête de la page = Logo-->
+
+            <header class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt="logo" class="logo"></a>
+            </header>
+
+            <div id="menu" >
+                <!--Différentes caractériqtique du menu à savoir la couleur, la forme...-->
+                <nav class="navbar navbar-expand-md navbar-light bg-#55d6aa">
+                    <a class="navbar-brand abs float-left">KUMAR Aman</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapse_target">
+                        
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">ACCUEIL</a></li>
+                            <!--Menu déroulant-->
+                            <li class="nav-item dropdown">
+                                <a href="loisirs.html" class="nav-link dropdown-toggle" data-toggle="dropdown">LOISIRS</a>
+                                <div class="dropdown-menu">
+                                    <a href="loisirsF.html" class="dropdown-item">Football</a>
+                                    <a href="loisirsM.html" class="dropdown-item">Musique</a>
+                                    <a href="loisirsP.html" class="dropdown-item">Photographie</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="competences.html" class="nav-link">COMPETENCES</a></li>
+                            <li class="nav-item"><a href="experience.html" class="nav-link">EXPERIENCE</a></li>
+                            <li class="nav-item"><a href="diplomes.html" class="nav-link">DIPLOMES</a></li>
+                            <li class="nav-item"><a href="Contact.html" class="nav-link">CONTACTEZ-MOI</a></li>
+                        </ul> 
+                    </div>
+                     
+                </nav>
+                
+            </div>
+            <div class="container contact-form">
+                <div class="contact-image">
+                    <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+                </div>
+                <form method="post">
+                    <h3>Me contacter</h3>
+                    <!-- Ceci sont mes adresses email -->
+                    <div class="contact pb-3">
+                        <div id="gmail">
+                            <img src="image/gmail.png" width="50px" height="50px">
+                            <bottom><a href="mailto:malikaman1999@gmail.com">malikaman1999@gmail.com</a></bottom>
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtName" class="form-control" placeholder="Votre nom *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtEmail" class="form-control" placeholder="Votre Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtPhone" class="form-control" placeholder="Votre numéro du téléphone *" value="" />
+                            </div>
+                            <div class="form-row">
+                                <input type="text" name="myCity" class="form-control" placeholder="Votre Ville *" value="" />
+                               
+                <!-- Ceci est la rubrique pays -->
+                                <div class="form-group">
+                                    <label for="myState">Pays</label>
+                                    <select id="myState" class="form-control">
+                                        <option value="France" selected="selected">France </option>
+                                        <option value="Afghanistan">Afghanistan </option>
+                                        <option value="Afrique_Centrale">Afrique_Centrale </option>
+                                        <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                                        <option value="Albanie">Albanie </option>
+                                        <option value="Algerie">Algerie </option>
+                                        <option value="Allemagne">Allemagne </option>
+                                        <option value="Andorre">Andorre </option>
+                                        <option value="Angola">Angola </option>
+                                        <option value="Anguilla">Anguilla </option>
+                                        <option value="Arabie_Saoudite">Arabie_Saoudite </option>
+                                        <option value="Argentine">Argentine </option>
+                                        <option value="Armenie">Armenie </option> 
+                                        <option value="Australie">Australie </option>
+                                        <option value="Autriche">Autriche </option>
+                                        <option value="Azerbaidjan">Azerbaidjan </option>
+                                        <option value="Inde">Inde </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btnSubmit" class="btnContact" value="Envoyer le message" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg" class="form-control" placeholder="Votre message *" style="width: 100%; height: 150px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="footer mt-5">
+                <div class="container">
+                  <p>  &copy; Projet CDIN 2019 IUT PARIS DESCARTES</p>
+                </div>
+            </footer>
+
+    </body>
+</html>

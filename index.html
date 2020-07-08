@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+
+        <!--Importation fichiers style CSS-->
+
+        <link rel ="stylesheet" href="styleCV.css"/> 
+        
+        <!--Titre de la page-->
+        <title>ePortfolio</title>
+
+        <!--Importation Bootstrap-->
+
+        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style type="text/css">
+            body { background-color: #0a254a !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+         </style>
+    </head>
+
+    <body>
+
+        <!--En tête de la page = Logo-->
+
+       
+
+        <!--Definition  du la largeur de la page à l'aide du Bootstrap-->
+
+        <div id ="globale" class="mx-4 p-1 w-95".bg-primary>
+            <header class="logo " >
+                <a href="index.html"><img src="Images/logo.png" alt="logo" class="logo"></a>
+            </header>       
+            <div id="menu" >
+               
+                
+                <!--Différentes caractériqtique du menu à savoir la couleur, la forme...-->
+                
+                <nav class="navbar navbar-expand-md navbar-light bg-#55d6aa">
+                    <a class="navbar-brand abs float-left">KUMAR Aman</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapse_target">
+                        
+                        <ul class="navbar-nav "> <!--Vert: nav flex-column-->
+                            <li class="nav-item"><a href="index.html" class="nav-link">ACCUEIL</a></li>
+                            <!--Menu déroulant-->
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">LOISIRS</a>
+                                <div class="dropdown-menu">
+                                    <a href="loisirsF.html" class="dropdown-item">Football</a>
+                                    <a href="loisirsM.html" class="dropdown-item">Musique</a>
+                                    <a href="loisirsP.html" class="dropdown-item">Photographie</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="competences.html" class="nav-link">COMPETENCES</a></li>
+                            <li class="nav-item"><a href="experience.html" class="nav-link">EXPERIENCE</a></li>
+                            <li class="nav-item"><a href="diplomes.html" class="nav-link">DIPLOMES</a></li>
+                            <li class="nav-item"><a href="Contact.html" class="nav-link">CONTACTEZ-MOI</a></li>
+                        </ul>
+                         
+                    </div>
+                     
+                </nav>
+                
+            </div>
+             
+            <div id="Présentation">
+
+               <div id="intro" class="view">
+                    <!--utilisations du ".container-fluid" pour profiter du système de Grille et placer des lignes et des colonnes à l'intérieur.-->
+                    <div class="container-fluid d-flex align-items-center justify-content-center ">
+                        <!--On donne les différentes caractéristique à notre texte-->
+                        <div class="row d-flex justify-content-center text-center">
+                            <!--Grille et colonnes largeur 10-->
+                            <div class="col-md-10 nom">
+                    
+                                    <!-- Titre des pages -->
+                                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">KUMAR Aman</h2>
+                    
+                                    <!-- Séparateur à l'aide du balise >hr> -->
+                                <hr class="Sep">
+                    
+                                    <!-- Déscription du titre-->
+                                <h4 class="white-text my-4">Etudiant à l'IUT de Paris Descartes, Passioné d'informatique et des différentes langages de programmation.</h4>
+                                   
+                            </div>
+                
+                        </div>
+                
+                    </div>                   
+                
+                </div>
+            </div>
+
+        
+
+            <div id="Page">
+        
+            <!--Contenu de la page d'accueil-->
+            
+                <div class="container">
+            
+                <!--Section: Parcourire / création du section pour une clarté-->
+                    <section id="best-features" class="text-center">
+            
+                    <!-- En tête de la page/ mt = margine-top -->
+                    <h2 class="mb-5 mt-4 font-weight-bold">Parcourez mon ePortfolio</h2>
+                
+            
+                    <!--Grille row-->
+                    <!--Utilisation du row pour créer des colonnes sur la page d'accueil-->
+                    
+                    <div class="row">
+            
+                    <!--Grille et colonnes du largeur 4 pour créer 3 sur la largeur du page-->
+                    <div class="col-md-4 mb-5">
+                        <!--<i> pour les icons prédefinit sur Bootstrap/ fa =Font Awesome-->
+                        <a href="loisirsP.html" ><i class="fa fa-camera-retro fa-4x "></i> </a>                    
+                        <h4 class="my-4 font-weight-bold">loisirs</h4>
+                        <p class="grey-text">Découvrez ce que j’aime faire dans le temps libre. A savoir faire du sport, écouter la musique ….</p>
+                    </div>
+                    <!--Grille et colonnes du largeur 4-->
+            
+                    <div class="col-md-4 mb-1">
+                        <a href="competences.html" ><i class="fa fa-id-card fa-4x "></i></a>
+                        <h4 class="my-4 font-weight-bold">Competences</h4>
+                        <p class="grey-text">Découvrez mes différentes compétences en informatique et 
+                        les différentes langues que je parle.</p>
+                    </div>
+
+                    <!--Grille et colonnes du largeur 4-->
+        
+                    <div class="col-md-4 mb-1">
+                        <a href="diplomes.html" class="nav-link"><i class="fa fa-user-graduate fa-4x "></i></a>
+                        <h4 class="my-4 font-weight-bold">Mes diplômes</h4>
+                        <p class="grey-text">Vous trouverez sur cet onglet mon parcours scolaire plus précisément 
+                        les différents diplômes que j’ai obtenus. </p>
+                    </div>
+
+                    <!--Grille et colonnes du largeur 4-->
+                    
+                        <div class="col-md-4 mb-1">
+                        <a href="experience.html"><i class="fa fa-address-book fa-4x "></i></a>
+                        <h4 class="my-4 font-weight-bold">Experience</h4>
+                        <p class="grey-text">Vous trouverez sur cet onglet mon parcours dans la vie professionnel, 
+                        mes différents jobs d’été, les stages…</p>
+                    </div>
+
+                    <!--Grille et colonnes du largeur 4-->
+                   
+                    <div class="col-md-4 mb-1">
+                        <a href="Contact.html" class="nav-link"><i class="fa fa-user-plus fa-4x "></i></a>
+                        <h4 class="my-4 font-weight-bold">Me contacter</h4>
+                        <p class="grey-text">Si vous voulez me contacter vous pouvez m »envoyer un msg avec vote nom.</p>
+                    </div>
+
+                    <!--Grille et colonnes du largeur 4-->
+                   
+                    <div class="col-md-4 mb-1">
+                        <img class="PhotoPP" src="Images/pp.jpg"width="190px" height="190px"/>           
+                    </div>
+                    
+                    </div>
+                               
+                </section>
+            </div>
+
+            <!--Bas du page responsive-->
+            
+            <footer class="footer mt-5">
+                <div class="container">
+                  <p>  &copy; Projet CDIN 2019 IUT PARIS DESCARTES</p>
+                </div>
+            </footer>
+            
+        </div>   
+    </body>
+</html>
