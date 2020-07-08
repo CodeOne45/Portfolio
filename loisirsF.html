@@ -1,145 +1,200 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <!--Importation fichiers style CSS-->
 
-    <head>
-        <meta charset="utf-8" />
-        <!--Importation fichiers style CSS-->
+    <link rel="stylesheet" href="styleCV.css" />
 
-        <link rel ="stylesheet" href="styleCV.css"/> 
-        
-        <!--Titre de la page-->
+    <!--Titre de la page-->
 
-        <title>ePortfolio</title>
-        
-        <!--Importation Bootstrap-->
+    <title>ePortfolio</title>
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <meta charset="utf-8">
-      
-        <style type="text/css">
-            body { background-color: #0a254a !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-         </style>    </head>
+    <!--Importation Bootstrap-->
 
-    <body>
-        
-        <!--Definition  du la largeur de la page à l'aide du Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
 
-        <div id ="globale" class="mx-4 p-1 w-95">
-            
-            <!--En tête de la page = Logo-->
+    <style type="text/css">
+      body {
+        background-color: #0a254a !important;
+      } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+    </style>
+  </head>
 
-            <header class="logo">
-                <a href="index.html"><img src="Images/logo.png" alt="logo" class="logo"></a>
-            </header>
-            
-            <div id="menu" >
-                
-                <!--Différentes caractériqtique du menu à savoir la couleur, la forme...-->
+  <body>
+    <!--Definition  du la largeur de la page à l'aide du Bootstrap-->
 
-                <nav class="navbar navbar-expand-md navbar-light bg-#55d6aa">
-                    <a class="navbar-brand abs float-left">KUMAR Aman</a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapse_target">
-                        
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="index.html" class="nav-link">ACCUEIL</a></li>
-                            
-                            <!--Menu déroulant-->
+    <div id="globale" class="mx-4 p-1 w-95">
+      <!--En tête de la page = Logo-->
 
-                            <li class="nav-item dropdown">
-                                <a href="loisirs.html" class="nav-link dropdown-toggle" data-toggle="dropdown">LOISIRS</a>
-                                <div class="dropdown-menu">
-                                    <a href="loisirsF.html" class="dropdown-item">Football</a>
-                                    <a href="loisirsM.html" class="dropdown-item">Musique</a>
-                                    <a href="loisirsP.html" class="dropdown-item">Photographie</a>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="competences.html" class="nav-link">COMPETENCES</a></li>
-                            <li class="nav-item"><a href="experience.html" class="nav-link">EXPERIENCE</a></li>
-                            <li class="nav-item"><a href="diplomes.html" class="nav-link">DIPLOMES</a></li>
-                            <li class="nav-item"><a href="Contact.html" class="nav-link">CONTACTEZ-MOI</a></li>
-                        </ul> 
-                    </div>
-                     
-                </nav>
-                
-            </div>
-             
-                         
-            <div id="Présentation">
+      <header class="logo">
+        <a href="index.html"
+          ><img src="Images/logo.png" alt="logo" class="logo"
+        /></a>
+      </header>
 
-                <div id="intro" class="view">
-                    <!--utilisations du ".container-fluid" pour profiter du système de Grille et placer des lignes et des colonnes à l'intérieur.-->
-                     <div class="container-fluid d-flex align-items-center justify-content-center ">
-                        <!--On donne les différentes caractéristique à notre texte-->
-                         <div class="row d-flex justify-content-center text-center">
-                             <!--Grille et colonnes largeur 10-->   
-                             <div class="col-md-10 nom">
-                     
-                                     <!-- Titre des pages -->
-                                 <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">SPORT</h2>
-                     
-                                     <!-- Séparateur à l'aide du balise >hr> -->
-                                 <hr class="Sep">
-                     
-                                     <!-- Déscription du titre-->
-                                 <h4 class="white-text my-4">Mon sport préféré</h4>
-                                    
-                     
-                             </div>
-                 
-                         </div>
-                 
-                     </div>                   
-                 
-                 </div>
-            </div>
+      <div id="menu">
+        <!--Différentes caractériqtique du menu à savoir la couleur, la forme...-->
 
-            <!--Contenu du page-->
+        <nav class="navbar navbar-expand-md navbar-light bg-#55d6aa">
+          <a class="navbar-brand abs float-left">KUMAR Aman</a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#collapse_target"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">ACCUEIL</a>
+              </li>
 
-            <section class="sectionexperience mt-5 ">
-                    <!--Différentes articles-->
-                <article id="foot" >
-                    <h2>Football - 2013/2016</h2>
-                    <div id="div" >
-                        <p>J'ai pratiqué du Football en club pendant 3 ans.<br>
-                        Je pratique encore mais dans le club du sport du d'IUT de Paris Descartes</p>
-                        <img class="imgF" src="image/football.jpg" width="280px" height="186px">
-                     </div>       	
-                </article>
+              <!--Menu déroulant-->
 
-                <article id="ClubPref">
-                    <h2>PSG (Paris Saint-Germain)</h2>
-                    <div id="div">
-                        <p>Je suis supporter du PSG depuis que j'ai 13 ans.<br>
-                        J'adore ce club et ses joueurs et je les support dans toutes les compétitions</p>
-                        <img class="imgF" src="images/psg.jpg" width="280px" height="186px">
-                     </div>       	
-                </article>
-                        <!--Video-->
-                <div align='center' class="pt-3 embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hL6RKcRAHOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                 </div>
-                 
-            </section>
-            
-            <!--Bas du page responsive-->
-
-            <footer class="footer mt-5">
-                <div class="container">
-                  <p>  &copy; Projet CDIN 2019 IUT PARIS DESCARTES</p>
+              <li class="nav-item dropdown">
+                <a
+                  href="loisirs.html"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >LOISIRS</a
+                >
+                <div class="dropdown-menu">
+                  <a href="loisirsF.html" class="dropdown-item">Football</a>
+                  <a href="loisirsM.html" class="dropdown-item">Musique</a>
+                  <a href="loisirsP.html" class="dropdown-item">Photographie</a>
                 </div>
-            </footer>           
+              </li>
+              <li class="nav-item">
+                <a href="competences.html" class="nav-link">COMPETENCES</a>
+              </li>
+              <li class="nav-item">
+                <a href="experience.html" class="nav-link">EXPERIENCE</a>
+              </li>
+              <li class="nav-item">
+                <a href="diplomes.html" class="nav-link">DIPLOMES</a>
+              </li>
+              <li class="nav-item">
+                <a href="Contact.html" class="nav-link">CONTACTEZ-MOI</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-            
-        </div>   
-    </body>
+      <div id="Présentation">
+        <div id="intro" class="view">
+          <!--utilisations du ".container-fluid" pour profiter du système de Grille et placer des lignes et des colonnes à l'intérieur.-->
+          <div
+            class="container-fluid d-flex align-items-center justify-content-center"
+          >
+            <!--On donne les différentes caractéristique à notre texte-->
+            <div class="row d-flex justify-content-center text-center">
+              <!--Grille et colonnes largeur 10-->
+              <div class="col-md-10 nom">
+                <!-- Titre des pages -->
+                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">
+                  SPORT
+                </h2>
+
+                <!-- Séparateur à l'aide du balise >hr> -->
+                <hr class="Sep" />
+
+                <!-- Déscription du titre-->
+                <h4 class="white-text my-4">Mon sport préféré</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Contenu du page-->
+
+      <section class="sectionexperience mt-5">
+        <!--Différentes articles-->
+        <article id="foot">
+          <h2>Football - 2013/2016</h2>
+          <div id="div">
+            <p>
+              J'ai pratiqué du Football en club pendant 3 ans.<br />
+              Je pratique encore mais dans le club du sport du d'IUT de Paris
+              Descartes.
+            </p>
+            <img
+              class="imgF"
+              src="image/football.jpg"
+              width="280px"
+              height="186px"
+            />
+          </div>
+        </article>
+
+        <article id="ClubPref">
+          <h2>PSG (Paris Saint-Germain)</h2>
+          <div id="div">
+            <p>
+              Je suis supporter du PSG depuis que j'ai 13 ans.<br />
+              J'adore ce club et ses joueurs et je les support dans toutes les
+              compétitions.
+            </p>
+            <img
+              class="imgF"
+              src="images/psg.jpg"
+              width="280px"
+              height="186px"
+            />
+          </div>
+        </article>
+        <!--Video-->
+        <div
+          align="center"
+          class="pt-3 embed-responsive embed-responsive-16by9"
+        >
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/hL6RKcRAHOY"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!--Bas du page responsive-->
+
+      <footer class="footer mt-5">
+        <div class="container">
+          <p>&copy; Projet CDIN 2019 IUT PARIS DESCARTES</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
