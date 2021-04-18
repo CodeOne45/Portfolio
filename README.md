@@ -1,4 +1,1 @@
-# Portfolio
-
-## Live démo : https://potfoliokumar.netlify.app/
-Portfolio HTML,CSS et Bootstrap 
+## https://potfoliokumar.netlify.app/
